@@ -1,0 +1,7 @@
+1. feladat
+
+Filter: {genres: "Short", $and: [{year: {$gte: 1945}}, {year: {$lte: 1970}}]}
+
+Project: {title: 1, year: 1, _id: 0}
+
+Sort: {year: 1, title: 1}

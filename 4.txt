@@ -1,0 +1,6 @@
+4. feladat
+
+match(m:Movie)<-[:ACTED_IN]-(p:Person)
+where m.released > 1970 or m.title contains "Love"
+return p.name as szereplő,  m.title as cím
+order by cím desc
